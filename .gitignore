@@ -1,0 +1,19 @@
+# Exclude target directory
+/target
+
+# Exclude other common build files
+**/*.rs.bk
+**/*.o
+**/*.a
+**/*.d
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Exclude IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
