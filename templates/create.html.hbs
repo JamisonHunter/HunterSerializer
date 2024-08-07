@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Item</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    {{#if message}}
+    <p>{{message}}</p>
+    {{/if}}
+    <form action="/create" method="post">
+        <label for="user">User:</label>
+        <input id="user" name="user" type="text" required />
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required />
+        <label for="serial">Serial Number:</label>
+        <input id="serial" name="serial" type="number" required />
+        <label for="image">Image (URL or Base64):</label>
+        <input id="image" name="image" type="text" required />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
